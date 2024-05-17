@@ -50,52 +50,6 @@ d3.json(geoData).then(data=>{
     }).addTo(myMap);
 });
 
-// //Define layer groups for base and overlay layers
-// const baseMaps={
-//     Street Map:street,
-//   
-// };
-
-// const overlayMaps={
-//     Earthquakes: earthquakes
-// }
-// 
-
-// //Your data markers should reflect the magnitude of the earthquake by their size and the depth of the earthquake by color. Earthquakes with higher magnitudes should appear larger, and earthquakes with greater depth should appear darker in color.
-// const mag = feature.properties.mag
-// //Find the depth of the earth -the third coordinate for each earthquake.
-
-// const depth = d3.json(queryurl).Feature.geometry.coordinates[2]
-// //Include popups that provide additional information about the earthquake when its associated marker is clicked.
-
-
-
-
-
-//Create a legend that will provide context for your map data.
-
-// let legend = L.control({ position: "bottomright" });
-// legend.onAdd = function() {
-//   let div = L.DomUtil.create("div", "info legend");
-//   let limits = [-10,10,30,50,70,90,100];
-//   let labels = [];
-
-//   // Create header for the legend
-//   div.innerHTML = '<h4>Depth (km)</h4><ul>';
-
-//   // Add color blocks with labels
-//   for (let i = 0; i < limits.length - 1; i++) {
-//       let color = getColor(limits[i]);
-//       div.innerHTML += `<li style="background-color: ${color};">${limits[i]}-${limits[i+1]}</li>`;
-//   }
-
-//   // Close the list HTML
-//   div.innerHTML += '</ul>';
-//   return div;
-// };
-
-// // // Adding the legend to the map
-// legend.addTo(myMap);
 
 let legend = L.control({
     position: "bottomright"
