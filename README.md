@@ -19,7 +19,7 @@ The earthquake data is fetched from the US Geological Survey (USGS). Specificall
 
 Here is an example of how the map visualization might look:
 
-![Earthquake West Coast Snap Shot](./Images/snapshot.png)
+![Earthquake West Coast Snap Shot](Leaflet-Part-1/Images/snapshot.png)
 
 
 ## How to Run
